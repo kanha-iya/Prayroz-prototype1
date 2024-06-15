@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- nav bar  -->
+    <nav class="fixed-top custom-nav">
+        <div class="navbar navbar-expand-lg navbar-light custom-navabr">
+            <div class="container-fluid cutom-logo">
+                <div>
+                    <a class="navbar-brand display-4" href="#">Prayroz</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pooja-item.html">Pooja Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./online-pooja.html">Online pooja</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu custom-nav-dropdown" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                    <div class="d-flex text-nowrap">
+                        <button type="button" class="btn btn-outline-primary mx-2" data-bs-toggle="modal"
+                            href="#loginmodal">Login</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            href="#signupmodal">Sign-up</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="">
+        <div class=" row custom-home">
+            <div class="position-absolute custom-degin-1 "><img src="./images/home-design.png" alt=""></div>
+            <div class="position-absolute custom-degin-2"><img src="./images/home-design.png" alt=""></div>
+            <div class="position-absolute custom-degin-3"><img src="./images//home-design.png" alt=""></div>
+            <div class="col-12 col-lg-7 custom-home-msg">
+                <div>
+                    <h1>Prayroz</h1>
+                    <p>One solution for all your religious need</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 m-auto custom-home-slides">
+                <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100 custom-img-div">
+                        <div class="carousel-item active custom-img-div">
+                            <img src="./images/1st.jpg" class="d-block w-100 custom-home-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100 custom-img-div">
+                            <img src="./images/2nd.webp" class="d-block w-100 h-100 custom-home-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100 custom-img-div">
+                            <img src="./images/3rd.jpg" class="d-block w-100 h-100 custom-home-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section 1 -->
+    <section>
+        <div class="d-flex position-relative">
+            <div class="w-25 custom-service-head">
+                <p>Our Services</p>
+            </div>
+        </div>
+
+        <div class="container custom-grid">
+            <div class="row m-0">
+                <div class="col-12 col-md-6 col-lg-4 my-4 px-2 custom-col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card h-100">
+                            <img src="./images/1st.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 my-4 px-2 custom-col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card h-100">
+                            <img src="./images/2nd.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 my-4 px-2 custom-col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card h-100">
+                            <img src="./images/3rd.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section 1 end   -->
+
+    <!-- section 2 -->
+    <section id="about">
+        <div class="row">
+            <div class="col-12 col-md-6 p-5">
+                <h1>About</h1>
+                <!-- counter start  -->
+                <div class="container custom-counter">
+                    <div class="w-75 m-auto d-flex justify-content-center">
+                        <div class="col-4 mx-2">
+                            <div class=" text-center">
+                                <h3 class="">
+                                    10+
+                                </h3>
+                                <h5>
+                                    Temples
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-4 mx-2">
+                            <div class=" text-center">
+                                <h3 class="">
+                                    50
+                                </h3>
+                                <h5>
+                                    Cities
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-4 mx-2">
+                            <div class="text-center">
+                                <h3 class="">
+                                    1000+
+                                </h3>
+                                <h5>
+                                    Users
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- counter end  -->
+                <div class="border p-2 mt-2 shadow">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam maxime ad doloremque esse
+                        culpa, excepturi mollitia qui rerum voluptatum suscipit accusantium hic in eum aliquam
+                        laboriosam
+                        quo explicabo! Iure, tempore modi cupiditate porro distinctio et sint sunt iste dignissimos ab
+                        hic
+                        delectus molestias vel, alias quo sequi itaque sed?</p>
+                </div>
+            </div>
+            <div class=" border p-3 col-md-6 p-5 d-none d-md-flex custom-slide-big-box overflow-hidden">
+                <div class=" border p-3 d-flex custom-slide-box slide-1">
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <!-- <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span> -->
+                </div>
+                <div class=" border p-3 d-flex custom-slide-box slide-2">
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <!-- <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span> -->
+                </div>
+                <!-- <div class="d-flex flex-column">
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- section 2 end   -->
+
+    <!-- contact form start   -->
+    <section id="contact">
+        <div class="mt-5">
+            <div class="w-75 m-auto p-5 shadow ">
+                <h3>Connect with us</h3>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingPhone" placeholder="phoneno">
+                    <label for="floatingPhone">Phone Number</label>
+                </div>
+                <div class="form-floating custom-form-msg">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 200px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact form end  -->
+
+    <!-- sign up modal start  -->
+    <div class="modal fade" id="signupmodal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Registration form | Already Have an
+                        account ? <a class="text-reset" data-bs-target="#loginmodal" data-bs-toggle="modal">Login</a>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Registration 3 - Bootstrap Brain Component -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 bsb-tpl-bg-lotion">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-5">
+                                                <h2 class="h3">Registration</h2>
+                                                <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details to
+                                                    register</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form action="#!">
+                                        <div class="row gy-3 gy-md-4 overflow-hidden">
+                                            <div class="col-12">
+                                                <label for="firstName" class="form-label">First Name <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" name="firstName" id="firstName"
+                                                    placeholder="First Name" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="lastName" class="form-label">Last Name <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" name="lastName" id="lastName"
+                                                    placeholder="Last Name" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="email" class="form-label">Email <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" name="email" id="email"
+                                                    placeholder="name@example.com" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="password" class="form-label">Password <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" name="password"
+                                                    id="password" value="" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="confirmpassword" class="form-label">Confirm Password <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" name="confirmpassword"
+                                                    id="confirmpassword" value="" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="age" class="form-label">Age<span
+                                                        class="text-danger"></span></label>
+                                                <input type="text" class="form-control" name="age" id="age" value=""
+                                                    required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="address" class="form-label">Address<span
+                                                        class="text-danger"></span></label>
+                                                <input type="text" class="form-control" name="address" id="address"
+                                                    value="">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="gender" class="form-label">Gender<span
+                                                        class="text-danger"></span></label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Male
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Female
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        name="iAgree" id="iAgree" required>
+                                                    <label class="form-check-label text-secondary" for="iAgree">
+                                                        I agree to the <a href="#!"
+                                                            class="link-primary text-decoration-none">terms and
+                                                            conditions</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button class="btn bsb-btn-xl btn-primary" type="submit">Sign
+                                                        up</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- sign up modal end  -->
+    <!-- login modal start  -->
+    <div class="modal fade" id="loginmodal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Login | Not have an Account ? <a
+                            class="text-reset" data-bs-target="#signupmodal" data-bs-toggle="modal">
+                            Register
+                        </a></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 bsb-tpl-bg-lotion">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-5">
+                                                <h2 class="h3">Login</h2>
+                                                <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details to
+                                                    login</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form action="#!">
+                                        <div class="row gy-3 gy-md-4 overflow-hidden">
+                                            <div class="col-12">
+                                                <label for="loginemail" class="form-label">Email <span
+                                                        class="text-danger"></span></label>
+                                                <input type="email" class="form-control" name="email" id="loginemail"
+                                                    placeholder="name@example.com" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="loginpassword" class="form-label">Password <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" name="password"
+                                                    id="loginpassword" value="" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button class="btn bsb-btn-xl btn-primary" type="submit">Login
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+    <!-- login modal start  -->
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
