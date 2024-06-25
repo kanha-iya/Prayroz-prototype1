@@ -9,7 +9,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Hello, world!</title>
@@ -17,11 +16,11 @@
 
 <body>
     <!-- nav bar  -->
-    <nav class="fixed-top custom-nav">
+    <nav class="custom-nav">
         <div class="navbar navbar-expand-lg navbar-light custom-navabr">
             <div class="container-fluid cutom-logo">
                 <div>
-                    <a class="navbar-brand display-4" href="#">Prayroz</a>
+                    <a class="navbar-brand display-4 custom-logo-name" href="#">Prayroz</a>
                     <a class="navbar-brand" href="#">
                         <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
                     </a>
@@ -35,10 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./pooja-item.html">Pooja Store</a>
@@ -61,12 +60,12 @@
                         </ul>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html" tabindex="-1" aria-disabled="true">Contact</a>
+                        <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
                     </li>
                     <div class="d-flex text-nowrap">
-                        <button type="button" class="btn btn-outline-primary mx-2" data-bs-toggle="modal"
-                            href="#loginmodal">Login</button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-outline-warning mx-2 custom-btn-login"
+                            data-bs-toggle="modal" href="#loginmodal">Login</button>
+                        <button type="button" class="btn btn-warning custom-btn" data-bs-toggle="modal"
                             href="#signupmodal">Sign-up</button>
                     </div>
                 </ul>
@@ -75,107 +74,270 @@
     </nav>
 
 
-    <section>
-        <div class="mt-5 p-3 d-flex">
+    <div style="height: 100px;"></div>
+
+
+    <div class="rr p-2">
+        <div class="row">
             <div class="col-6">
-                <h3 class="px-5">Online Pooja</h3>
-                <div class="input-group">
-                    <div class="container">
-                        <div class="row height d-flex justify-content-cneter align-items-center">
-
-                            <div class="col-12 d-flex justify-content-cneter align-items-center">
-
-                                <div class="search d-flex flex-row w-100">
-                                    <i class="fa fa-search m-auto"></i>
-                                    <input type="text" class="form-control mx-2" placeholder="Have a question? Ask Now">
-                                    <button class="btn btn-primary">Search</button>
-                                </div>
-
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="active custom-online-pooja-card border shadow" id="v-pills-c1-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-c1" type="button" role="tab" aria-controls="v-pills-c1"
+                        aria-selected="true">
+                        <div><img height="100px" width="100px" src="./images/1st.jpg" alt=""></div>
+                        <div class="custom-online-pooja-card-text">
+                            <div>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, necessitatibus sed optio
+                                libero, nobis dolore asperiores laudantium vero aspernatur dolorum inventore fugiat
+                                culpa cumque odio ullam eveniet quisquam iusto laborum?
                             </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="rr px-5">
-                    <h3 class="">Available Temple</h3>
-                    <div class="row">
-                        <div class="col-12 m-2">
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="./images/1st.jpg" class="img-fluid rounded-start" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.
-                                            </p>
-                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
-                                                    ago</small> <a href="./book-pooja.html" type="button" class="btn btn-outline-primary">Book</a></p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="custom-online-pooja-btn">
+                                <button>Book Now</button>
                             </div>
                         </div>
-                        <div class="col-12 m-2">
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="./images/1st.jpg" class="img-fluid rounded-start" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.
-                                            </p>
-                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
-                                                    ago</small> <a href="./book-pooja.html" type="button" class="btn btn-outline-primary">Book</a></p>
-                                        </div>
-                                    </div>
-                                </div>
+                    </button>
+                    <button class="active custom-online-pooja-card border shadow" id="v-pills-c2-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-c2" type="button" role="tab" aria-controls="v-pills-c2"
+                        aria-selected="true">
+                        <div><img height="100px" width="100px" src="./images/1st.jpg" alt=""></div>
+                        <div class="custom-online-pooja-card-text">
+                            <div>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, necessitatibus sed optio
+                                libero, nobis dolore asperiores laudantium vero aspernatur dolorum inventore fugiat
+                                culpa cumque odio ullam eveniet quisquam iusto laborum?
+                            </div>
+                            <div class="custom-online-pooja-btn">
+                                <button>Book Now</button>
                             </div>
                         </div>
-                        <div class="col-12 m-2">
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="./images/1st.jpg" class="img-fluid rounded-start" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.
-                                            </p>
-                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
-                                                    ago</small> <a href="./book-pooja.html" type="button" class="btn btn-outline-primary">Book</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </button>
+                    
+
                 </div>
             </div>
-            <div class="col-6 p-5">
-                <img class="w-100" src="./images/1st.jpg" alt="">
-                <h1>About</h1>
-                <div class="border p-2 mt-2 shadow">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam maxime ad doloremque esse
-                        culpa, excepturi mollitia qui rerum voluptatum suscipit accusantium hic in eum aliquam
-                        laboriosam
-                        quo explicabo! Iure, tempore modi cupiditate porro distinctio et sint sunt iste dignissimos ab
-                        hic
-                        delectus molestias vel, alias quo sequi itaque sed?</p>
+            <div class="col-6">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-c1" role="tabpanel"
+                        aria-labelledby="v-pills-c1-tab">hello</div>
+                    <div class="tab-pane fade" id="v-pills-c2" role="tabpanel"
+                        aria-labelledby="v-pills-c2-tab">hey</div>
+                    
                 </div>
             </div>
         </div>
+    </div>
+
+
+
+
+    <!-- contact form start   -->
+    <section id="contact">
+        <div class="container border custom-contact-container position-relative ">
+            <img class="design-img img-4" src="./images/home-design.png" alt="">
+            <img class="design-img img-5" src="./images/home-design.png" alt="">
+            <div class="custom-contact-box">
+                <h3>Connect with us</h3>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingPhone" placeholder="phoneno">
+                    <label for="floatingPhone">Phone Number</label>
+                </div>
+                <div class="form-floating custom-form-msg">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 200px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+                <button type="button" class="btn btn-outline-primary w-50 m-auto">Primary</button>
+            </div>
+        </div>
     </section>
+    <!-- contact form end  -->
+
+    <!-- sign up modal start  -->
+    <div class="modal fade" id="signupmodal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Registration form | Already Have
+                        an
+                        account ? <a class="text-reset" data-bs-target="#loginmodal" data-bs-toggle="modal">Login</a>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Registration 3 - Bootstrap Brain Component -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 bsb-tpl-bg-lotion">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-5">
+                                                <h2 class="h3">Registration</h2>
+                                                <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details
+                                                    to
+                                                    register</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form action="#!">
+                                        <div class="row gy-3 gy-md-4 overflow-hidden">
+                                            <div class="col-12">
+                                                <label for="firstName" class="form-label">First Name <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" name="firstName" id="firstName"
+                                                    placeholder="First Name" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="lastName" class="form-label">Last Name <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" name="lastName" id="lastName"
+                                                    placeholder="Last Name" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="email" class="form-label">Email <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" name="email" id="email"
+                                                    placeholder="name@example.com" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="password" class="form-label">Password <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" name="password"
+                                                    id="password" value="" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="confirmpassword" class="form-label">Confirm Password
+                                                    <span class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" name="confirmpassword"
+                                                    id="confirmpassword" value="" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="age" class="form-label">Age<span
+                                                        class="text-danger"></span></label>
+                                                <input type="text" class="form-control" name="age" id="age" value=""
+                                                    required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="address" class="form-label">Address<span
+                                                        class="text-danger"></span></label>
+                                                <input type="text" class="form-control" name="address" id="address"
+                                                    value="">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="gender" class="form-label">Gender<span
+                                                        class="text-danger"></span></label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Male
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Female
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        name="iAgree" id="iAgree" required>
+                                                    <label class="form-check-label text-secondary" for="iAgree">
+                                                        I agree to the <a href="#!"
+                                                            class="link-primary text-decoration-none">terms and
+                                                            conditions</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button class="btn bsb-btn-xl btn-primary" type="submit">Sign
+                                                        up</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- sign up modal end  -->
+    <!-- login modal start  -->
+    <div class="modal fade" id="loginmodal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Login | Not have an Account ? <a
+                            class="text-reset" data-bs-target="#signupmodal" data-bs-toggle="modal">
+                            Register
+                        </a></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 bsb-tpl-bg-lotion">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-5">
+                                                <h2 class="h3">Login</h2>
+                                                <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details
+                                                    to
+                                                    login</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form action="#!">
+                                        <div class="row gy-3 gy-md-4 overflow-hidden">
+                                            <div class="col-12">
+                                                <label for="loginemail" class="form-label">Email <span
+                                                        class="text-danger"></span></label>
+                                                <input type="email" class="form-control" name="email" id="loginemail"
+                                                    placeholder="name@example.com" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="loginpassword" class="form-label">Password <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" name="password"
+                                                    id="loginpassword" value="" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button class="btn bsb-btn-xl btn-primary" type="submit">Login
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+    <!-- login modal start  -->
+
+
+
+
 
 
 

@@ -3,13 +3,22 @@
     margin: 0px;
 }
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .custom-nav{
     background-image: linear-gradient(to right, rgba(255, 184, 0, 0.69) , rgba(255, 0, 0, 0.79));
     opacity: 1;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
     /* color: white;
     background-color: white; */
+    position: fixed;
+    width: 100%;
+    top: 15px;
+}
+.custom-logo-name{
+    font-weight: 600;
 }
 .custom-navabr{
     /* background-color: red; */
@@ -21,6 +30,12 @@ body{
     font-size: 20px;
     font-weight: 500;
 }
+.custom-btn{
+    background-color: orange;
+}
+.custom-btn-login{
+    border: 2px solid orange;
+}
 .custom-nav a {
     white-space: nowrap;
 }
@@ -29,30 +44,39 @@ body{
 }
 .custom-home{
     position: relative;
+    /* width: 100%; */
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0) , rgba(255, 122, 0, 0.5));
     height: 100vh;
-    padding: 30px 0px;
-    overflow-x: hidden;
-}
-.custom-home-slides{
-    padding: 70px;
-}
-.custom-home-img, .custom-img-div{ 
-    border-radius: 20px;
-    height: 100%;
-    opacity: 0.9;
-}
-.custom-home-msg{
+    /* padding: 30px 0px; */
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: start;
-    font-size: 30px;
 }
-.custom-home-msg h1{
-    font-size: 8rem;
+.custom-home-para{
+    font-size: 20px;
 }
+/* .custom-img{
+    height: 100%;
+} */
+.design-img{
+    position: absolute;
+}
+.img-1{
+    top: -30%;
+    left: -15%;
+}
+.img-2{
+    top: 10%;
+    right: -15%;
+}
+.img-3{
+    top: 80%;
+    left: 30%;
+}
+.custom-border{
+    border-radius: 25px;
+}
+
 .custom-degin-1{
     top: -10rem;
     left: -10rem;
@@ -84,23 +108,18 @@ body{
 }
 .custom-grid{
     padding: 0px 40px; 
-    flex: 1;
+    /* flex: 1; */
 
 }
-.custom-col {
-    /* padding-left: 0px;
-    max-width: 100%;
-    max-height: 100%;
-    position: relative; */
-}
-.card-img-top{
-    height: 75%;
-    /* border-radius: 10%; */
-}
-.card{
+.custom-card{
+    border-radius:20px ;
     transition: all 1s;
 }
-.card:hover{
+.custom-card img{
+    border-radius:25px ;
+    padding: 10px;
+}
+.custom-card:hover{
     scale: 1.08;
 }
 
@@ -164,14 +183,104 @@ body{
         translate: 30%;
     }
 }
+.custom-price-box{
+    /* border: 1px solid; */
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) ;
+    border-radius: 20px;
+    padding: 10px;
+    background-image: linear-gradient( rgba(255, 0, 0, 0), rgba(255, 122, 0, 0.5));
+}
+.custom-price-card{
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.custom-price-card img{
+    border-radius: 5px;
+    /* padding: 10px 0px */
+    object-fit: cover;
+}
+.custom-price-box button {
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(255, 184, 0, 0.69) , rgba(255, 0, 0, 0.79));
+}
+.custom-about-container{
+    background-image: linear-gradient( rgba(255, 0, 0, 0), rgba(255, 122, 0, 0.5));
+    margin: 20px auto;
+}
+.custom-about{
+    border: 1px solid black;
+    /* background-color: red; */
+    border-radius: 20px;
+    padding: 20px;
+}
+.custom-contact-container{
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) ; */
+    background-image: linear-gradient( rgba(255, 0, 0, 0), rgba(255, 122, 0, 0.5));
+}
+.custom-contact-box{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.18);
+}
+.custom-contact-box input , .custom-contact-box textarea{
+    /* background-image: linear-gradient( rgba(255, 184, 0, 0.69) , rgba(255, 0, 0, 0.79)); */
+    border-radius: 10px;
+}
+.img-4{
+    position: absolute;
+    top: -40%;
+    right: -50%;
+}
+.img-5{
+    position: absolute;
+    top: 70%;
+    left: -50%;
+}
+.custom-online-pooja-card{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.custom-online-pooja-card-text{
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.custom-online-pooja-btn{
+    /* width: max-content; */
+    position: relative;
+
+}
+.custom-online-pooja-btn button{
+    padding: 5px;
+    /* width: max-content; */
+    position: relative;
+    align-items: end;
+    right: 0px;
+
+}
 
 
 
 
 
-
-
-
-@media (max-width: 767) {
-
+@media (max-width: 767px) {
+    .custom-grid{
+        padding: 0px 5px;
+        /* background-color: red; */
+        width: 90%;
+        margin: 20px  auto;
+    }
+    .custom-price-box{
+        padding: 10px;
+    }
 }

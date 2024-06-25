@@ -16,11 +16,11 @@
 
 <body>
     <!-- nav bar  -->
-    <nav class="fixed-top custom-nav">
+    <nav class="custom-nav">
         <div class="navbar navbar-expand-lg navbar-light custom-navabr">
             <div class="container-fluid cutom-logo">
                 <div>
-                    <a class="navbar-brand display-4" href="#">Prayroz</a>
+                    <a class="navbar-brand display-4 custom-logo-name" href="#">Prayroz</a>
                     <a class="navbar-brand" href="#">
                         <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
                     </a>
@@ -63,9 +63,9 @@
                         <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
                     </li>
                     <div class="d-flex text-nowrap">
-                        <button type="button" class="btn btn-outline-primary mx-2" data-bs-toggle="modal"
-                            href="#loginmodal">Login</button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-outline-warning mx-2 custom-btn-login"
+                            data-bs-toggle="modal" href="#loginmodal">Login</button>
+                        <button type="button" class="btn btn-warning custom-btn" data-bs-toggle="modal"
                             href="#signupmodal">Sign-up</button>
                     </div>
                 </ul>
@@ -73,103 +73,218 @@
         </div>
     </nav>
 
-    <div class="">
-        <div class=" row custom-home">
-            <div class="position-absolute custom-degin-1 "><img src="./images/home-design.png" alt=""></div>
-            <div class="position-absolute custom-degin-2"><img src="./images/home-design.png" alt=""></div>
-            <div class="position-absolute custom-degin-3"><img src="./images//home-design.png" alt=""></div>
-            <div class="col-12 col-lg-7 custom-home-msg">
-                <div>
-                    <h1>Prayroz</h1>
-                    <p>One solution for all your religious need</p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-5 m-auto custom-home-slides">
-                <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
-                    <div class="carousel-inner h-100 custom-img-div">
-                        <div class="carousel-item active custom-img-div">
-                            <img src="./images/1st.jpg" class="d-block w-100 custom-home-img" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item h-100 custom-img-div">
-                            <img src="./images/2nd.webp" class="d-block w-100 h-100 custom-home-img" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item h-100 custom-img-div">
-                            <img src="./images/3rd.jpg" class="d-block w-100 h-100 custom-home-img" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
+    <div class="custom-home">
+        <div class="container">
+            <!-- <div class="home-design"> -->
+            <img class="design-img img-1 d-none d-lg-block" src="./images/home-design.png" alt="">
+            <img class="design-img img-2 d-none d-md-block" src="./images/home-design.png" alt="">
+            <img class="design-img img-3" src="./images/home-design.png" alt="">
+            <!-- </div> -->
+            <div class="row">
+                <div class="col-12 col-lg-5 px-4 py-2 p-lg-5">
+                    <div class="d-flex justify-content-center align-items-start flex-column h-100">
+                        <h1>Prayroz</h1>
+                        <p class="custom-home-para">One Solution for all your religious needs</p>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+                <div class="col-12 col-md-8 col-lg-7 p-2 p-lg-5 m-auto">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active custom-border">
+                                <img src="./images/1st.jpg" class="d-block w-100 custom-border custom-img" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item custom-border">
+                                <img src="./images/3rd.jpg" class="d-block w-100 custom-border custom-img" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item custom-border">
+                                <img src="./images/1st.jpg" class="d-block w-100 custom-border custom-img" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <!-- section 1 -->
-    <section>
-        <div class="d-flex position-relative">
+    <section class="">
+        <div class="d-none d-md-flex position-relative">
             <div class="w-25 custom-service-head">
                 <p>Our Services</p>
             </div>
         </div>
 
-        <div class="container custom-grid">
-            <div class="row m-0">
-                <div class="col-12 col-md-6 col-lg-4 my-4 px-2 custom-col">
-                    <a href="#" class="text-decoration-none text-reset">
-                        <div class="card h-100">
-                            <img src="./images/1st.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
+        <!-- desktop view  -->
+        <div class="container custom-grid border shadow custom-border  ">
+            <h2 class="d-block d-md-none my-4">Online Pooja</h2>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12 col-md-6 my-2 ">
+                            <a href="#" class="text-decoration-none text-reset">
+                                <div class="card h-100 custom-card shadow">
+                                    <img src="./images/1st.jpg" height="250px" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text">Online Pooja</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Minus
+                                            voluptatibus hic voluptas quos voluptatem nemo?</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 my-4 px-2 custom-col">
-                    <a href="#" class="text-decoration-none text-reset">
-                        <div class="card h-100">
-                            <img src="./images/2nd.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
+                        <div class="col-12 col-md-6 my-2 ">
+                            <a href="#" class="text-decoration-none text-reset">
+                                <div class="card h-100 custom-card shadow">
+                                    <img src="./images/3rd.jpg" height="250px" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text">Coming Soon</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Minus
+                                            voluptatibus hic voluptas quos voluptatem nemo?</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 my-4 px-2 custom-col">
-                    <a href="#" class="text-decoration-none text-reset">
-                        <div class="card h-100">
-                            <img src="./images/3rd.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 my-2 custom-col d-none d-lg-block">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card h-100 custom-card shadow">
+                            <img src="./images/2nd.webp" height="250px" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-text">Pooja Store</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+                                    voluptatibus hic voluptas quos voluptatem nemo?</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
             </div>
+        </div>
+        <!-- phone view  -->
+        <div class="container d-block d-lg-none bg-light border custom-price-box">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="p-2 m-2 col-12">Pooja Store</h1>
+                    <div class="row">
+                        <div class="col-6 col-md-4 p-2">
+                            <a href="#" class="text-decoration-none text-reset">
+                                <div class="card custom-price-card">
+                                    <h5>Product Name</h5>
+                                    <img class="" src="./images/2nd.webp" height="100px" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text">&#x20b9; 20</h4>
+                                        <button type="button" class="btn btn-secondary custom-btn w-100">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 p-2">
+                            <a href="#" class="text-decoration-none text-reset">
+                                <div class="card custom-price-card">
+                                    <h5>Product Name</h5>
+                                    <img class="" src="./images/2nd.webp" height="100px" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text">&#x20b9; 20</h4>
+                                        <button type="button" class="btn btn-secondary custom-btn w-100">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 p-2">
+                            <a href="#" class="text-decoration-none text-reset">
+                                <div class="card custom-price-card">
+                                    <h5>Product Name</h5>
+                                    <img class="" src="./images/2nd.webp" height="100px" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text">&#x20b9; 20</h4>
+                                        <button type="button" class="btn btn-secondary custom-btn w-100">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 p-2">
+                            <a href="#" class="text-decoration-none text-reset">
+                                <div class="card custom-price-card">
+                                    <h5>Product Name</h5>
+                                    <img class="" src="./images/2nd.webp" height="100px" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text">&#x20b9; 20</h4>
+                                        <button type="button" class="btn btn-secondary custom-btn w-100">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 p-2">
+                            <a href="#" class="text-decoration-none text-reset">
+                                <div class="card custom-price-card">
+                                    <h5>Product Name</h5>
+                                    <img class="" src="./images/2nd.webp" height="100px" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text">&#x20b9; 20</h4>
+                                        <button type="button" class="btn btn-secondary custom-btn w-100">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 p-2">
+                            <a href="#" class="text-decoration-none text-reset">
+                                <div class="card custom-price-card">
+                                    <h5>Product Name</h5>
+                                    <img class="" src="./images/2nd.webp" height="100px" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text">&#x20b9; 20</h4>
+                                        <button type="button" class="btn btn-secondary custom-btn w-100">Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-secondary custom-btn w-75 m-auto">Wisit Pooja
+                            Store</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -177,74 +292,28 @@
 
     <!-- section 2 -->
     <section id="about">
-        <div class="row">
-            <div class="col-12 col-md-6 p-5">
-                <h1>About</h1>
-                <!-- counter start  -->
-                <div class="container custom-counter">
-                    <div class="w-75 m-auto d-flex justify-content-center">
-                        <div class="col-4 mx-2">
-                            <div class=" text-center">
-                                <h3 class="">
-                                    10+
-                                </h3>
-                                <h5>
-                                    Temples
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="col-4 mx-2">
-                            <div class=" text-center">
-                                <h3 class="">
-                                    50
-                                </h3>
-                                <h5>
-                                    Cities
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="col-4 mx-2">
-                            <div class="text-center">
-                                <h3 class="">
-                                    1000+
-                                </h3>
-                                <h5>
-                                    Users
-                                </h5>
-                            </div>
-                        </div>
+        <div class="container custom-about-container">
+            <div class="row">
+                <div class="col-12 col-lg-6 p-4 p-md-5 custom-about-box">
+                    <h1>About</h1>
+                    <div class=" mt-2 custom-about">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur, omnis repellat
+                            expedita amet inventore ut deserunt velit laudantium quas, error sint reiciendis. Non saepe
+                            atque aperiam necessitatibus sapiente enim neque dolorum, similique a fuga dolores optio
+                            temporibus molestiae placeat, sequi cupiditate quas eos deserunt, doloribus mollitia!
+                            Tenetur, officiis officia numquam inventore consequuntur minus modi nemo debitis iusto
+                            beatae hic, asperiores, unde veritatis. Commodi nihil, nam nostrum, repudiandae alias
+                            architecto quos pariatur amet necessitatibus excepturi ullam. Esse expedita rem ut, eveniet
+                            accusantium suscipit porro, similique, explicabo mollitia obcaecati officia a enim ipsum
+                        </p>
                     </div>
                 </div>
-                <!-- counter end  -->
-                <div class="border p-2 mt-2 shadow">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam maxime ad doloremque esse
-                        culpa, excepturi mollitia qui rerum voluptatum suscipit accusantium hic in eum aliquam
-                        laboriosam
-                        quo explicabo! Iure, tempore modi cupiditate porro distinctio et sint sunt iste dignissimos ab
-                        hic
-                        delectus molestias vel, alias quo sequi itaque sed?</p>
+                <div class="col-12 col-md-6  p-5 d-none d-lg-block">
+                    <h1>Image</h1>
+                    <div class="border p-2 mt-2 shadow">
+                        <img src="" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class=" border p-3 col-md-6 p-5 d-none d-md-flex custom-slide-big-box overflow-hidden">
-                <div class=" border p-3 d-flex custom-slide-box slide-1">
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <!-- <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span> -->
-                </div>
-                <div class=" border p-3 d-flex custom-slide-box slide-2">
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <!-- <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span> -->
-                </div>
-                <!-- <div class="d-flex flex-column">
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                    <span><img width="100px" height="100px" src="./images/1st.jpg" alt=""></span>
-                </div> -->
             </div>
         </div>
     </section>
@@ -253,8 +322,10 @@
 
     <!-- contact form start   -->
     <section id="contact">
-        <div class="mt-5">
-            <div class="w-75 m-auto p-5 shadow ">
+        <div class="container border custom-contact-container position-relative ">
+            <img class="design-img img-4" src="./images/home-design.png" alt="">
+            <img class="design-img img-5" src="./images/home-design.png" alt="">
+            <div class="custom-contact-box">
                 <h3>Connect with us</h3>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="name">
@@ -269,6 +340,7 @@
                         style="height: 200px"></textarea>
                     <label for="floatingTextarea2">Comments</label>
                 </div>
+                <button type="button" class="btn btn-outline-primary w-50 m-auto">Primary</button>
             </div>
         </div>
     </section>
@@ -279,7 +351,8 @@
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content custom-modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Registration form | Already Have an
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Registration form | Already Have
+                        an
                         account ? <a class="text-reset" data-bs-target="#loginmodal" data-bs-toggle="modal">Login</a>
                     </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -294,7 +367,8 @@
                                         <div class="col-12">
                                             <div class="mb-5">
                                                 <h2 class="h3">Registration</h2>
-                                                <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details to
+                                                <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details
+                                                    to
                                                     register</h3>
                                             </div>
                                         </div>
@@ -326,8 +400,8 @@
                                                     id="password" value="" required>
                                             </div>
                                             <div class="col-12">
-                                                <label for="confirmpassword" class="form-label">Confirm Password <span
-                                                        class="text-danger">*</span></label>
+                                                <label for="confirmpassword" class="form-label">Confirm Password
+                                                    <span class="text-danger">*</span></label>
                                                 <input type="password" class="form-control" name="confirmpassword"
                                                     id="confirmpassword" value="" required>
                                             </div>
@@ -411,7 +485,8 @@
                                         <div class="col-12">
                                             <div class="mb-5">
                                                 <h2 class="h3">Login</h2>
-                                                <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details to
+                                                <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details
+                                                    to
                                                     login</h3>
                                             </div>
                                         </div>
